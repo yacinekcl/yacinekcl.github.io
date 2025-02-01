@@ -1,0 +1,58 @@
+body{
+    background-color:rgb(50, 75, 50) ;
+}
+
+.mainpage {
+    
+}
+
+.mainpage h1, h2, p{
+    text-align: center;
+    
+}
+.mainpage h1{
+    color: yellow;
+}
+.mainpage h2, p {
+    color: white;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px; /* Add spacing between links */
+}
+
+.links a {
+    text-align: center;
+    color: white;
+    text-decoration: none; /* Remove underline from links */
+    position: relative; /* Needed for positioning the icon */
+    padding-right: 24px; /*  space for the icon */
+}
+
+.links a::after {
+    content: "";
+    display: inline-block;
+    width: 16px; /*  size of the icon */
+    height: 16px; /*  size of the icon */
+    background-image: url('external-link.svg'); /* Path to icon */
+    background-size: cover;
+    position: absolute;
+    right: 0; /* Position the icon to the right of the link */
+    top: 50%; /* Center the icon vertically */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    filter: brightness(0) invert(1); /* Make the icon white */
+}
+
+.links a:hover::after {
+    filter: brightness(0) invert(0.5) sepia(1) hue-rotate(180deg) saturate(5); /* Make the icon blue on hover */
+}
+.outer{
+    display: flex;
+    flex-direction: column;
+}
+.outer a {
+    text-align: center;
+}
