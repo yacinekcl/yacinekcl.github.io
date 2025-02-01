@@ -52,7 +52,20 @@ body{
 .outer{
     display: flex;
     flex-direction: column;
+    align-items: center;
+
 }
 .outer a {
-    text-align: center;
+    
+    width: 62px;
+    height: 62px;
+}
+
+.outer img{
+    height: 62px;
+    width: 62px;
+}
+
+.outer a:hover {
+    filter: brightness(0) invert(0.5) sepia(1) hue-rotate(180deg) saturate(5); 
 }
