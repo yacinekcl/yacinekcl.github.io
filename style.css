@@ -2,9 +2,16 @@ body{
     background-color:rgb(50, 75, 50) ;
     font-family: "Courier New", Courier, monospace;
 }
+html, body{
+    height: 100%;
+}
 
 .mainpage {
-    
+   display: flex;
+   height: 100%;
+   align-items: center;
+   flex-direction: column;
+    justify-content: center; 
 }
 
 .mainpage h1, h2, p{
