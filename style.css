@@ -1,6 +1,7 @@
 body{
     background-image: url(orig.gif);
     background-color: white ;
+    background-repeat: no-repeat;
     font-family: "Courier New", Courier, monospace;
 }
 
