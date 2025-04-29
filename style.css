@@ -17,7 +17,7 @@ body{
     justify-content: center; /* Center the content vertically within the container */
     
 }
-}
+
 
 .mainpage h1, h2, p{
     text-align: center;
@@ -77,8 +77,8 @@ body{
     height: 62px;
 }
 
-.outer img{
-	filter: brightness(0) saturate(100%);: 
+.outer img {
+	filter: brightness(0) saturate(100%);
     height: 62px;
     width: 62px;
 }
@@ -94,5 +94,21 @@ body{
 	  body {
 		  background-image: url(background.png)
 	  }
+      .links a {
+        color: white;
+      }
+
+      .mainpage h1{
+        color: yellow;
+        
+    }
+    
+    .mainpage h2, p {
+        color: #ffffff;
+    }
+
+    .outer img{
+        filter: invert(100%) brightness(100%) contrast(100%);
+    }
 	  
   }
