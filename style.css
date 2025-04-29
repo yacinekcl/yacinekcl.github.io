@@ -92,7 +92,7 @@ body{
 /* Mobile Responsive Styles */
   @media (max-width: 720px) {
 	  body {
-		  background-image: url(mobile.gif)
+		  background-image: url(background.png)
 	  }
 	  
   }
