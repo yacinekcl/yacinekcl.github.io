@@ -98,7 +98,7 @@ body{
         color: white;
       }
 	  .links a::after {
-		  filter: brightness(0) invert(1);
+		  filter: invert(100%) brightness(1000%);
 	  }
 
       .mainpage h1{
