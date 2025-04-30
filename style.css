@@ -97,6 +97,9 @@ body{
       .links a {
         color: white;
       }
+	  .links a::after {
+		  filter: brightness(0) invert(1);
+	  }
 
       .mainpage h1{
         color: yellow;
