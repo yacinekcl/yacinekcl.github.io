@@ -1,20 +1,42 @@
 body{
+    
     background-image: url(orig.gif);
     background-color: white ;
     background-repeat: no-repeat;
     font-family: "Courier New", Courier, monospace;
+    background-size: cover; 
+    background-position: center; 
+    
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start; /* or center, depending on your intent */
+    align-items: center;
+    max-height: 100%;
+  /*  width: 100%; */
+    padding-left: 10%; /* instead of left:10% absolute */
 }
 
 
+
 .mainpage {
-	position: absolute; /* Use absolute positioning to control placement */
-    left: 10%; /* Keep the container 10% from the left edge of the page */
+/*	position: absolute; 
+    left: 10%; 
     top: 50%;
-    transform: translateY(-50%); /* Center the container vertically */
+    transform: translateY(-50%);  Center the container vertically */
     display: flex;
     flex-direction: column;
     align-items: center; /* Center the content horizontally within the container */
     justify-content: center; /* Center the content vertically within the container */
+    
     
 }
 
@@ -78,7 +100,8 @@ body{
 }
 
 .outer img {
-	filter: brightness(0) saturate(100%);
+	/* filter: brightness(0) saturate(100%); */
+    filter: brightness(0%) saturate(100%);
     height: 62px;
     width: 62px;
 }
@@ -97,6 +120,14 @@ body{
       .links a {
         color: white;
       }
+
+      .links a::after {
+        filter: brightness(1000%) saturate(100%);
+      }
+
+      .links a:hover::after {
+        filter: brightness(0) invert(0.5) sepia(1) hue-rotate(180deg) saturate(5); /* Make the icon blue on hover */
+    }
 
       .mainpage h1{
         color: yellow;
