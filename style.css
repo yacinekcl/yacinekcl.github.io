@@ -120,9 +120,7 @@ body, html {
       .links a {
         color: white;
       }
-	  .links a::after {
-		  filter: invert(100%) brightness(1000%);
-	  }
+	  
 
       .links a::after {
         filter: brightness(1000%) saturate(100%);
