@@ -21,6 +21,7 @@ body, html {
     justify-content: flex-start; /* or center, depending on your intent */
     align-items: center;
     max-height: 100%;
+    height: 100%;
   /*  width: 100%; */
     padding-left: 10%; /* instead of left:10% absolute */
 }
@@ -123,7 +124,7 @@ body, html {
 	  
 
       .links a::after {
-        filter: brightness(1000%) saturate(100%);
+        background-image: url(external-link-white.svg);
       }
 
       .links a:hover::after {
