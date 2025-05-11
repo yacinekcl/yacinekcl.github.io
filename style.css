@@ -41,6 +41,7 @@ html, body{
     border: 2px solid black;
     border-radius: 2%;
     background-color: rgba(0, 0, 0, 0.288);
+    padding: 20px 20px;
 }
 
 .mainpage h1, h2, p{
