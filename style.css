@@ -93,21 +93,23 @@ html, body{
     filter: brightness(0) invert(0.5) sepia(1) hue-rotate(180deg) saturate(5); /* Make the icon blue on hover */
 }
 .outer{
-    display: inline-block;
+    display: flex;
    /* flex-direction: column; */
+   flex-direction: row;
     align-items: center;
+    gap: 20px;
 
 }
 .outer a {
 
     
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 }
 
 .outer img{
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
 }
 
 .outer a:hover {
